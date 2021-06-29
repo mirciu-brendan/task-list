@@ -1,0 +1,135 @@
+﻿* {
+  margin: 0;
+}
+#main {
+  margin: 0;
+  position: absolute;
+  min-width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main2 {
+  margin: 0;
+  position: absolute;
+  min-width: 50%;
+  /* 50% */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid black;
+  background-color: brown;
+  width: 800px;
+  max-width: 80%;
+  padding: 20px;
+  background-color: blue;
+  border-radius: 20px;
+  color: white;
+  z-index: 10;
+}
+.active {
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+#table-div {
+  background-color: blue;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+#sort {
+  text-align: end;
+  padding-right: 10px;
+}
+th {
+  text-align: left;
+  border-bottom: 2px solid rgb(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+}
+h2 {
+  padding-left: 20px;
+}
+.material-icons {
+  font-size: 16px !important;
+  color: grey;
+}
+.material-icons:hover {
+  font-size: 16px !important;
+  color: white;
+}
+
+.number {
+  text-align: end;
+  width: 140px;
+}
+.status {
+  text-align: end;
+  width: 140px;
+}
+.action {
+  text-align: end;
+  padding-left: 5px;
+}
+#left {
+  width: 60%;
+}
+#right {
+  width: 40%;
+  /* display: inline-grid; */
+  text-align: end;
+}
+#popup2 {
+  display: flex;
+  margin-top: 10px;
+}
+#popup {
+  display: flex;
+}
+input {
+  width: 200px;
+  border-radius: 5px;
+  border-color: white;
+}
+select {
+  width: 205px;
+  border-radius: 5px;
+}
+.delete-grp {
+  cursor: pointer;
+}
+.table-rows:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+table {
+  border-spacing: 0px !important;
+  margin-bottom: 10px;
+}
+.groupName {
+  cursor: pointer;
+}
+.number {
+  cursor: pointer;
+}
+p {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: white;
+}

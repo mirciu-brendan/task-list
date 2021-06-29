@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="db.js"></script><!--Loading a user list to local storage-->
+    <title>Tasks list app</title>
+</head>
+<body>
+    <div>
+    <div id="main">
+        <h2>Tasks list app</h2>
+            
+                <div id="table-div" >
+                    <table style="width:100%">
+                        
+                        <tr>
+                          <th class="groupName" data-column="groupName" group-table-header data-order="desc">Name &#9650</th>
+                          <th data-column="tasksInGroup" class="number" group-table-header data-order="desc">Number of tasks &#9650</th>
+                          <th class="action">Action</th>
+                        </tr>
+                        <tbody id="tasksGroupTable">
+                        </tbody>
+                      </table>
+                      <button id="newGroupButton">Add new group</button>
+                      <p>*to edit group click on a row</p>
+                </div>
+            
+          
+    </div>
+
+    <br>
+    <div id="main2" class="">
+        <div id="popup">
+            <div style="width: 100%"><h3 data-group-title>New tasks group</h3><input form="taskForm" placeholder="Name of group" group-name value=""></div>
+            <button id="backButton">Back to main screen</button>
+        </div>
+        <div id="popup2">
+            <div id="left">
+            <table style="width:100%">
+                        
+                <tr>
+                  <th>Name</th>
+                  <th class="number">Deadline</th>
+                  <th class="number">User</th>
+                  <th class="status">Status</th>
+                  <th class="action">Action</th>
+                </tr>
+                <tbody id="tasksTable">
+                
+                </tbody>
+            </table>
+            </div>
+            <div id="right">
+                <form id="taskForm" data-new-task-form>
+                    <label>Taks name  </label><input type="text" placeholder="Name" task-input>
+                    <br>
+                    <label>User</label>
+                    <select type="text" placeholder="User id" user-input>
+                        <option value="" selected disabled hidden>Choose user</option>
+                    </select>
+                    <br>
+                    <label>Status</label>
+                    <select placeholder="Status" status-input>
+                        <option value="" selected disabled hidden>Choose status</option>
+                        <option value="New">New</option>
+                        <option value="InProgress">InProgress</option>
+                        <option value="Completed">Completed</option>Fiat</option>
+                    </select>
+                    <br>
+                    <label>Deadline</label>
+                    <input type="date" placeholder="Deadline" deadline-input>
+                    <br>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+            
+        </div>
+        <p>*to edit task click on a row</p>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="logic.js"></script>
+</html>
